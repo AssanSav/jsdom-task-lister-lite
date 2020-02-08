@@ -19,7 +19,10 @@ function addTaskToDoWithDeleteOption() {
     li.appendChild(deleteButton);
 
     deleteButton.addEventListener("click", () => {
-      li.remove();
+      var result = confirm("Want to delete?");
+      if (result) {
+        li.remove();
+      } 
     })
   })
 }
