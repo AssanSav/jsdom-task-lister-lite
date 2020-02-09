@@ -9,9 +9,9 @@ function addTaskToDoWithDeleteOption() {
     event.preventDefault();
 
     const userInput = event.target.querySelector("#new-task-description");
-    const showTasks = document.getElementById("tasks");
+    const showLists = document.getElementById("tasks");
     const li = document.createElement("li");
-    showTasks.appendChild(li);
+    showLists.appendChild(li);
     li.textContent = userInput.value; 
 
     const deleteButton = document.createElement("button");
